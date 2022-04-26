@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="horizontal"
+    android:descendantFocusability="beforeDescendants">
+
+
+    <TextView
+        android:id="@+id/pdf_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:enabled="true"
+        android:focusable="true"
+        android:longClickable="true"
+        android:text=""
+        android:textIsSelectable="true" />
+
+    <ImageView
+        android:id="@+id/pdf_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ImageView>
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/translator"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.125">
+            >
+
+            <Spinner
+                android:id="@+id/translate_spiner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:foregroundGravity="bottom"
+                android:id="@+id/trans_from"></EditText>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="37dp"
+                android:layout_marginEnd="4dp"
+                android:text="Translate"
+                android:id="@+id/transbt"
+                android:textSize="10dp"></Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="78dp"
+                android:layout_marginEnd="2dp"
+                android:text="Switch"
+                android:id="@+id/swbtn"
+                android:textSize="10dp"></Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="-5dp"
+                android:text="Close"
+                android:textSize="10dp"
+                android:id="@+id/closeBtn"
+                android:onClick="closeBtn"></Button>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.125"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/translate_spiner_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:foregroundGravity="bottom"
+                android:id="@+id/trans_to"></EditText>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

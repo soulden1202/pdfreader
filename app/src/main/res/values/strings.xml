@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LN Reader</string>
+    <string name="pref_sync">true</string>
+    <string name="pref_syncConnectionType">background</string>
+    <string name="pref_syncConnectionTypes_default">Light</string>
+    <string name="menu_setting">Setting</string>
+</resources>
